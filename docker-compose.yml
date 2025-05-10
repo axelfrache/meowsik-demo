@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  meowsik-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: meowsik-app
+    ports:
+      - "3030:80"  # Map port 3030 on host to port 80 in container
+    restart: unless-stopped
+    networks:
+      - meowsik-network
+
+networks:
+  meowsik-network:
+    driver: bridge
