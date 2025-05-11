@@ -40,8 +40,9 @@ function App() {
         <img src="/nelson.svg" alt="Nelson, la mascotte de Meowsik" className="mascot" />
         <span className="coming-soon">Coming Soon</span>
         <h1 className="title">Meowsik</h1>
+        <p className="slogan">Small bands, big sound</p>
         <p className="subtitle">
-          Supporting independent musicians - Follow the journey of our indie band through our upcoming mobile app
+          Supporting independent musicians - Follow the journey of our indie band through our upcoming app
         </p>
       </section>
 
