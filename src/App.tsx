@@ -1,26 +1,27 @@
 import './App.css'
 
 // Icônes pour les caractéristiques
-const HeadphonesIcon = () => (
+const MusicIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
-    <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+    <path d="M9 18V5l12-2v13"></path>
+    <circle cx="6" cy="18" r="3"></circle>
+    <circle cx="18" cy="16" r="3"></circle>
   </svg>
 )
 
-const CompassIcon = () => (
+const CalendarIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <circle cx="12" cy="12" r="10"></circle>
-    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+    <line x1="16" y1="2" x2="16" y2="6"></line>
+    <line x1="8" y1="2" x2="8" y2="6"></line>
+    <line x1="3" y1="10" x2="21" y2="10"></line>
   </svg>
 )
 
-const UsersIcon = () => (
+const MapPinIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-    <circle cx="9" cy="7" r="4"></circle>
-    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+    <circle cx="12" cy="10" r="3"></circle>
   </svg>
 )
 
@@ -32,7 +33,6 @@ const GithubIcon = () => (
 )
 
 function App() {
-
   return (
     <div className="container">
       {/* Section Héro */}
@@ -41,52 +41,51 @@ function App() {
         <span className="coming-soon">Coming Soon</span>
         <h1 className="title">Meowsik</h1>
         <p className="subtitle">
-          An innovative music streaming platform offering an immersive and personalized musical experience
+          Supporting independent musicians - Follow the journey of our indie band through our upcoming mobile app
         </p>
-
       </section>
 
       {/* Section Caractéristiques */}
       <section className="features">
-        <div className="feature">
-          <div className="feature-icon"><HeadphonesIcon /></div>
-          <h3 className="feature-title">Immersive Experience</h3>
-          <p className="feature-description">Dive into a revolutionary listening experience with high-quality sound and interactive features.</p>
-        </div>
+            <div className="feature">
+              <div className="feature-icon"><MusicIcon /></div>
+              <h3 className="feature-title">Exclusive Content</h3>
+              <p className="feature-description">Get access to unreleased tracks, behind-the-scenes footage, and the creative process of our indie band.</p>
+            </div>
 
-        <div className="feature">
-          <div className="feature-icon"><CompassIcon /></div>
-          <h3 className="feature-title">Music Discovery</h3>
-          <p className="feature-description">Explore new artists and genres with our advanced recommendation algorithm.</p>
-        </div>
+            <div className="feature">
+              <div className="feature-icon"><CalendarIcon /></div>
+              <h3 className="feature-title">Tour Updates</h3>
+              <p className="feature-description">Be the first to know about upcoming gigs, album releases and special events in your area.</p>
+            </div>
 
-        <div className="feature">
-          <div className="feature-icon"><UsersIcon /></div>
-          <h3 className="feature-title">Active Community</h3>
-          <p className="feature-description">Share your playlists and connect with other music lovers who share your tastes.</p>
-        </div>
+            <div className="feature">
+              <div className="feature-icon"><MapPinIcon /></div>
+              <h3 className="feature-title">Local Scene</h3>
+              <p className="feature-description">Connect with fellow fans and discover the vibrant local music scene through community meet-ups.</p>
+            </div>
       </section>
 
       {/* Footer */}
       <footer className="footer">
-        <div className="creator-section">
-          <h4 className="creator-title">Our Development Team</h4>
-          <div className="creators">
-            <a href="https://github.com/axelfrache" target="_blank" rel="noopener noreferrer" className="creator-card">
-              <GithubIcon />
-              <span className="creator-name">Axel</span>
-            </a>
-            <a href="https://github.com/aurianecodebien" target="_blank" rel="noopener noreferrer" className="creator-card">
-              <GithubIcon />
-              <span className="creator-name">Auriane</span>
-            </a>
-            <a href="https://github.com/surina-margarita" target="_blank" rel="noopener noreferrer" className="creator-card">
-              <GithubIcon />
-              <span className="creator-name">Margo</span>
-            </a>
-          </div>
-        </div>
-        <p>© {new Date().getFullYear()} Meowsik. All rights reserved.</p>
+            <div className="creator-section">
+              <h4 className="creator-title">Our Development Team</h4>
+              <div className="creators">
+                <a href="https://github.com/axelfrache" target="_blank" rel="noopener noreferrer" className="creator-card">
+                  <GithubIcon />
+                  <span className="creator-name">Axel</span>
+                </a>
+                <a href="https://github.com/aurianecodebien" target="_blank" rel="noopener noreferrer" className="creator-card">
+                  <GithubIcon />
+                  <span className="creator-name">Auriane</span>
+                </a>
+                <a href="https://github.com/surina-margarita" target="_blank" rel="noopener noreferrer" className="creator-card">
+                  <GithubIcon />
+                  <span className="creator-name">Margo</span>
+                </a>
+              </div>
+            </div>
+            <p>© {new Date().getFullYear()} Meowsik. All rights reserved.</p>
       </footer>
     </div>
   )
